@@ -1,3 +1,3 @@
-Apprenez à coder avec JavaScript
+# Apprenez à coder avec JavaScript
 
-Cours suivis sur OpenClassrooms
+## Cours suivis sur OpenClassrooms
