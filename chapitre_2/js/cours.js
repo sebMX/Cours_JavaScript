@@ -29,4 +29,6 @@ var g ="cinq" * 2;
 console.log(g);		// Affiche NaN : Not a Number
 
 var h = "5";
-console.log(h + 1);	// Concaténation affiche : 51
+console.log(h + 1);	// Concaténation affiche : "51"
+h = Number("5");
+console.log(h + 1);	// Addition numérique : affiche le nombre 6
