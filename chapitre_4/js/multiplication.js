@@ -11,4 +11,3 @@ while (i <= 10) {
 	console.log(nbre + " x " + i + " = " + (nbre * i));
 	i++;
 }
-
