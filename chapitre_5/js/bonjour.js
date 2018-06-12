@@ -1,3 +1,4 @@
+// Exercice : fonction bonjour avec saisies utilisateur
 // Renvoie un message de bienvenue
 
 function direBonjour (prenom, nom) {
