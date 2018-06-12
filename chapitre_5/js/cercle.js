@@ -11,5 +11,6 @@ function aire(rayon) {
 }
 
 var r = Number(prompt("Entrez un rayon de cercle :"));
+console.log("Le nombre entré est " + r);
 console.log("Le périmètre est " + perimetre(r));
 console.log("L'aire est " + aire(r));
