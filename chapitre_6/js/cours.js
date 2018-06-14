@@ -62,3 +62,7 @@ console.log(prenom[2]);
 console.log(prenom[3]);
 console.log(prenom[4]);
 
+// Affiche autant de carctères que possible
+for (var i = 0; i < prenom.length; i++) {
+	console.log(prenom[i]);
+}
