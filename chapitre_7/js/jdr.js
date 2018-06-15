@@ -33,3 +33,17 @@ perso.xp = perso.xp + 10;
 
 console.log(perso.decrire());
 // alert(perso.decrire());
+
+// Autre syntaxe = même résultat
+/*
+var perso = {}; // Création d'un objet sans aucune propriété
+perso.nom = "Seb";
+perso.sante = 150;
+perso.force = 25;
+// Renvoie la description du personnage
+perso.decrire = function () {
+    var description = this.nom + " a " + this.sante + " points de vie et " +
+        this.force + " en force";
+    return description;
+};
+*/
