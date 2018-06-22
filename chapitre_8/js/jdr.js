@@ -64,7 +64,7 @@ console.log(perso2.decrire());
 
 // Des adversaires pour nos héros
 
-// Création de prototypes
+// Création de prototype
 var Personnage = {
 	// Initialise le personnage
 	initPerso: function (nom, sante, force) {
@@ -123,10 +123,10 @@ Adversaire.initAdversaire = function (nom, sante, force, race, valeur) {
 // ...
 
 var joueur1 = Object.create(Joueur);
-joueur1.initJoueur("Aurora", 150, 35);
+joueur1.initJoueur("Aurora", 150, 45);
 
 var joueur2 = Object.create(Joueur);
-joueur2.initJoueur("Glacius", 130, 40);
+joueur2.initJoueur("Glacius", 130, 50);
 
 console.log("Bienvenue dans ce jeu d'aventure ! Voici nos courageux héros :");
 console.log(joueur1.decrire());
