@@ -71,6 +71,11 @@ var Personnage = {
 		this.nom = nom;
 		this.sante = sante;
 		this.force = force;
+		// Inventaire géré sous forme d'objet
+		this.inventaire = {
+			or: 10,
+			cles: 1
+		};
 	},
 	// Attaque un personnage cible
 	attaquer: function (cible) {
@@ -99,7 +104,8 @@ Joueur.initJoueur = function (nom, sante, force) {
 // Renvoie la description du joueur
 Joueur.decrire = function () {
 	var description = this.nom + " a " + this.sante + " points de vie, " +
-			this.force + " en force et " + this.xp + " points d'expérience";
+			this.force + " en force et " + this.xp + " points d'expérience, ainsi que " +
+			this.inventaire.or + " pièces d'or et " + this.inventaire.cles + " clé(s)";
 			return description;
 };
 
@@ -123,17 +129,17 @@ Adversaire.initAdversaire = function (nom, sante, force, race, valeur) {
 // ...
 
 var joueur1 = Object.create(Joueur);
-joueur1.initJoueur("Aurora", 150, 45);
+joueur1.initJoueur("Aurora", 150, 25);
 
 var joueur2 = Object.create(Joueur);
-joueur2.initJoueur("Glacius", 130, 50);
+joueur2.initJoueur("Glacius", 130, 30);
 
 console.log("Bienvenue dans ce jeu d'aventure ! Voici nos courageux héros :");
 console.log(joueur1.decrire());
 console.log(joueur2.decrire());
 
 var monstre = Object.create(Adversaire);
-monstre.initAdversaire("Zogzog", 90, 20, "orc", 10);
+monstre.initAdversaire("Zogzog", 40, 20, "orc", 10);
 
 console.log("Un affreux monstre arrive : c'est un " + monstre.race + " nommé " + monstre.nom);
 
